@@ -1,0 +1,7 @@
+# Local editor settings and operating-system metadata
+**/.vscode/
+**/.DS_Store
+**/Thumbs.db
+
+# Git installer downloaded into the workspace
+/Git-2.56.0.2-64-bit.exe
