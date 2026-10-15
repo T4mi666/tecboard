@@ -1,0 +1,117 @@
+/* Registra a fonte Unbounded salva na pasta fonts. */
+@font-face {
+    font-family: Unbounded; /* Nome usado para escolher essa fonte no CSS. */
+    src: url("../fonts/Unbounded-Bold.ttf") format("truetype"); /* Caminho e formato do arquivo da fonte. */
+    font-weight: 700; /* Indica a versão em negrito da fonte. */
+    font-display: swap; /* Mostra uma fonte alternativa enquanto Unbounded carrega. */
+}
+
+/* Registra a fonte Poppins salva na pasta fonts. */
+@font-face {
+    font-family: Poppins; /* Nome usado para escolher essa fonte no CSS. */
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype"); /* Caminho e formato do arquivo da fonte. */
+    font-weight: 400; /* Indica o peso regular (normal) da fonte. */
+    font-display: swap; /* Mostra uma fonte alternativa enquanto Poppins carrega. */
+}
+
+/* Remove as margens e os espaços internos padrão de todos os elementos. */
+* {
+    margin: 0; /* Remove o espaço externo padrão. */
+    padding: 0; /* Remove o espaço interno padrão. */
+}
+
+/* Aparência geral da página. */
+body {
+    background-color: #0E1014; /* Define o fundo escuro. */
+    color: #FFFFFF; /* Define como branco a cor padrão dos textos. */
+}
+
+/* Tamanho e posição do logo no cabeçalho. */
+header img {
+    display: block; /* Faz a imagem ocupar sua própria linha. */
+    width: 209px; /* Define a largura do logo. */
+    height: 34px; /* Define a altura do logo. */
+    margin: 75px 0 0 360px; /* Espaços: 75px acima, 0 à direita, 0 abaixo e 360px à esquerda. */
+}
+
+/* Aparência e posição do título principal. */
+h1 {
+    margin-top: 60px; /* Cria 60px de espaço acima do título. */
+    font-family: Unbounded, sans-serif; /* Usa Unbounded; sans-serif é a fonte alternativa. */
+    font-size: 64px; /* Define o tamanho do texto. */
+    text-align: center; /* Centraliza o texto do título. */
+}
+
+/* Destaca o trecho dentro da tag span do título. */
+h1 span {
+    color: #9747FF; /* Pinta esse trecho de roxo. */
+}
+
+/* Aparência e posição do parágrafo. */
+p {
+    width: 792px; /* Define a largura desejada do parágrafo. */
+    max-width: 90%; /* Em telas estreitas, limita a largura para caber na tela. */
+    margin: 24px auto 0; /* 24px acima, laterais automáticas para centralizar, 0 abaixo. */
+    font-family: Poppins, sans-serif; /* Usa Poppins; sans-serif é a fonte alternativa. */
+    font-size: 24px; /* Define o tamanho do texto. */
+    text-align: center; /* Centraliza o texto dentro do parágrafo. */
+}
+
+/* Aparência e tamanho do link usado como botão. */
+a {
+    display: block; /* Faz o link ocupar sua própria linha e aceitar largura e altura. */
+    width: 340px; /* Define a largura desejada do botão. */
+    max-width: 90%; /* Evita que o botão ultrapasse a tela em celulares. */
+    height: 66px; /* Define a altura do botão. */
+    margin: 40px auto; /* 40px acima/abaixo e margens automáticas para centralizar. */
+    border-radius: 36px; /* Arredonda os cantos do botão. */
+    background-color: #9747FF; /* Define o fundo roxo. */
+    color: #FFFFFF; /* Define a cor branca do texto. */
+    font-family: Poppins, sans-serif; /* Usa Poppins; sans-serif é a fonte alternativa. */
+    font-size: 24px; /* Define o tamanho do texto. */
+    line-height: 66px; /* Igual à altura do botão para centralizar verticalmente uma linha de texto. */
+    text-align: center; /* Centraliza o texto horizontalmente. */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+}
+
+/* :hover é uma pseudo-classe: aplica este estilo enquanto o ponteiro está sobre o link. */
+a:hover {
+    background-color: #8233E8; /* Escurece o botão ao passar o mouse. */
+}
+
+/* Tamanho e posição da imagem principal. */
+section img {
+    display: block; /* Faz a imagem ocupar sua própria linha. */
+    width: 792px; /* Define a largura desejada da imagem. */
+    max-width: 100%; /* Impede a imagem de ultrapassar a largura da seção. */
+    height: 446px; /* Define a altura; pode distorcer a imagem se a proporção não corresponder. */
+    margin: 0 auto; /* 0 de margem vertical e centralização horizontal. */
+}
+
+/* Aplica estes ajustes quando a tela tem até 768px de largura. */
+@media (max-width: 768px) {
+    header img {
+        margin: 65px 0 0 60px; /* Reposiciona o logo em telas menores. */
+    }
+
+    h1 {
+        font-size: 40px; 
+    }
+    p {
+        font-size: 20px;
+        width: 450px; 
+    }
+
+    section img {
+        width: 340px;
+        height: auto; /* Calcula a altura proporcionalmente à largura para não deformar a imagem. */
+    }
+  a{
+    font-size: 20px;
+    width: 251px;
+    height: 66px;
+
+
+  }
+
+}
